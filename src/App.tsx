@@ -47,7 +47,7 @@ export default function App() {
         <Sidebar
           activeModule={activeModule}
           onSelectModule={(module) => setActiveModule(module)}
-          openStrategiesCount={4}
+          openStrategiesCount={4 + customStrategies.length}
         />
 
         {/* Main Content Area */}

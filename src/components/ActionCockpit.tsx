@@ -50,15 +50,23 @@ export const ActionCockpit: React.FC<ActionCockpitProps> = ({
     return () => unsubscribe();
   }, [currentPersona]);
 
-  // Combine live strategies, prioritizing custom additions
+  // Combine live strategies, prioritizing custom additions and preserving base strategies
   const allStrategies = React.useMemo(() => {
-    const combined = [...customStrategies, ...firestoreStrategies];
+    const defaultList = PERSONA_DATA[currentPersona]?.strategies || [];
+    // Prioritize custom strategies and saved firestore strategies, then include default strategies
+    const combined = [...customStrategies, ...firestoreStrategies, ...defaultList];
     const map = new Map<string, StrategyItem>();
     combined.forEach((s) => {
-      if (!map.has(s.id)) map.set(s.id, s);
+      if (!s) return;
+      const normalized: StrategyItem = {
+        ...s,
+        headline: s.headline || (s as any).title || 'Strategic Initiative',
+      };
+      if (!map.has(normalized.id)) {
+        map.set(normalized.id, normalized);
+      }
     });
-    const result = Array.from(map.values());
-    return result.length > 0 ? result.slice(0, 6) : PERSONA_DATA[currentPersona].strategies;
+    return Array.from(map.values());
   }, [customStrategies, firestoreStrategies, currentPersona]);
 
   // Selected strategy
@@ -245,7 +253,7 @@ export const ActionCockpit: React.FC<ActionCockpitProps> = ({
         <div className="lg:col-span-4 space-y-3">
           <div className="flex items-center justify-between pb-2 border-b border-slate-200">
             <span className="text-xs font-black uppercase tracking-wider text-slate-500">
-              Open Strategies (4)
+              Open Strategies ({allStrategies.length})
             </span>
             <span className="text-[10px] text-slate-400 font-semibold">Click placard to flip</span>
           </div>

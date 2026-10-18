@@ -461,6 +461,33 @@ const RAW_PERSONA_DATA: Record<PersonaType, any> = {
       "timeAgo": "4 hrs ago",
       "tag": "Good",
       "fullDetail": "Smart climate controllers lowered AC power draw during low-footfall morning hours without reducing customer comfort, saving an estimated ₹14.4 Lakh per week."
+    },
+    {
+      "id": "cfo-int-6",
+      "headline": "Digital GST refund portal approves eighteen crore input tax credit",
+      "oneLiner": "Automated ledger reconciliation cleared quarterly indirect tax credits without departmental query.",
+      "source": "Goods and Services Tax Network (GSTN)",
+      "timeAgo": "5 hrs ago",
+      "tag": "Good",
+      "fullDetail": "Instant verification of electronic e-way bills and supplier invoices matched ₹18.4 Crore in input tax credits directly into company cash reserves, improving festive working capital."
+    },
+    {
+      "id": "cfo-int-7",
+      "headline": "Commercial credit rating agency re-affirms double-A positive outlook",
+      "oneLiner": "Crisil highlights healthy interest coverage and disciplined working capital management.",
+      "source": "Crisil Ratings Announcement",
+      "timeAgo": "6 hrs ago",
+      "tag": "Good",
+      "fullDetail": "The credit agency highlighted our negligible debt-to-equity ratio of 0.18 and robust EBITDA margins of 11.2%, ensuring lowest corporate borrowing rates on future store expansion lines."
+    },
+    {
+      "id": "cfo-int-8",
+      "headline": "Payment card interchange rate increase may add forty lakh monthly cost",
+      "oneLiner": "Banking consortium reviews merchant processing fees for credit card point-of-sale transactions.",
+      "source": "Internal – Treasury Cost Monitor",
+      "timeAgo": "7 hrs ago",
+      "tag": "OK",
+      "fullDetail": "Card network proposed 8 basis point adjustment on premium credit cards. Treasury is actively promoting zero-fee UPI and partner QR options at store billing counters to neutralize expense."
     }
   ],
   "risks": [
@@ -764,6 +791,56 @@ const RAW_PERSONA_DATA: Record<PersonaType, any> = {
           "isAI": false,
           "status": "Waiting",
           "progress": 35
+        }
+      ]
+    },
+    {
+      "id": "strat-4",
+      "headline": "Omni-Channel Customer Return & Restocking Fraud Prevention",
+      "title": "Omni-Channel Customer Return & Restocking Fraud Prevention",
+      "twoSentenceDetail": "Autonomous inspection bot cross-checks returned electronics serial numbers against original sales records. Eliminates fraudulent return claims and speeds up refund turnaround for genuine customers.",
+      "tag": "Good",
+      "percentCompleted": 72,
+      "actions": [
+        {
+          "id": "act-13",
+          "header": "Automate optical serial number validation at 284 store return desks",
+          "bullet1": "Scanned 8,400 return requests across mobile phones, smartwatches, and laptops",
+          "bullet2": "Detected 19 counterfeit component swap attempts valued at ₹14.8 Lakh",
+          "assignedTo": "ReturnGuard AI",
+          "isAI": true,
+          "status": "Done",
+          "progress": 100
+        },
+        {
+          "id": "act-14",
+          "header": "Sync authorized returns to central refurbishment and grade-A resale portal",
+          "bullet1": "Automatically re-listed 1,120 open-box items with transparent condition ratings",
+          "bullet2": "Recovered 82% of original invoice value through express clearance",
+          "assignedTo": "RefurbSync AI",
+          "isAI": true,
+          "status": "In progress",
+          "progress": 70
+        },
+        {
+          "id": "act-15",
+          "header": "Issue instant UPI and bank account customer refunds for verified devices",
+          "bullet1": "Customer refund processing time dropped from 4 business days to 90 seconds",
+          "bullet2": "Recorded 96% positive CSAT on return experience",
+          "assignedTo": "RefundBot AI",
+          "isAI": true,
+          "status": "In progress",
+          "progress": 60
+        },
+        {
+          "id": "act-16",
+          "header": "CFO authorization on quarterly return policy and allowance thresholds",
+          "bullet1": "Review fraud reduction audit and warranty settlement recovery report",
+          "bullet2": "Approve updated vendor return-to-vendor freight compensation agreement",
+          "assignedTo": "Anand Khurana",
+          "isAI": false,
+          "status": "Waiting",
+          "progress": 25
         }
       ]
     }
@@ -1141,6 +1218,33 @@ const RAW_PERSONA_DATA: Record<PersonaType, any> = {
       "timeAgo": "5 hrs ago",
       "tag": "Good",
       "fullDetail": "Signed long-term leases for high-street properties in Jaipur, Jodhpur, Bhubaneswar, and Cuttack. Fit-outs commence next Monday with targeted Q1 grand openings."
+    },
+    {
+      "id": "ceo-int-6",
+      "headline": "Smart TV category market share climbs to thirty-one percent nationally",
+      "oneLiner": "Diwali bundle campaigns propel The ArKitects ahead of regional electronics chains.",
+      "source": "GfK Retail Market Pulse",
+      "timeAgo": "6 hrs ago",
+      "tag": "Good",
+      "fullDetail": "Our exclusive warranty tie-ups and interactive OLED showroom lounges drove a 4.2% jump in large screen display market share across North and West metropolitan retail territories."
+    },
+    {
+      "id": "ceo-int-7",
+      "headline": "Commercial lease renegotiation lowers showroom rentals by four crore",
+      "oneLiner": "Corporate real estate secures 8% rental savings across 24 high-street flagship leases.",
+      "source": "Internal – Corporate Real Estate Office",
+      "timeAgo": "7 hrs ago",
+      "tag": "Good",
+      "fullDetail": "Successful 5-year lease renewals executed across premier shopping corridors in Mumbai, Bengaluru, and Pune locked in favorable occupancy cost ratios for the upcoming fiscal years."
+    },
+    {
+      "id": "ceo-int-8",
+      "headline": "Electronics raw material shortage hints at smartphone price rise next quarter",
+      "oneLiner": "Global semiconductor fab maintenance may constrain flagship phone supplies in January.",
+      "source": "Bloomberg Electronics Intelligence",
+      "timeAgo": "8 hrs ago",
+      "tag": "OK",
+      "fullDetail": "Advance procurement contracts and secured warehouse buffer inventory of 85,000 top-selling 5G smartphone units safeguard our store retail pricing and festive delivery commitments through Q4."
     }
   ],
   "risks": [
@@ -1444,6 +1548,56 @@ const RAW_PERSONA_DATA: Record<PersonaType, any> = {
           "isAI": false,
           "status": "Waiting",
           "progress": 40
+        }
+      ]
+    },
+    {
+      "id": "ceo-strat-4",
+      "headline": "Omni-Channel 3-Hour Express Store Delivery & Curbside Pickup",
+      "title": "Omni-Channel 3-Hour Express Store Delivery & Curbside Pickup",
+      "twoSentenceDetail": "Transforms all 284 retail showrooms into hyper-local fulfillment micro-hubs. Delivers TVs, laptops, and appliances to shoppers' doorsteps within 180 minutes of online booking.",
+      "tag": "Good",
+      "percentCompleted": 62,
+      "actions": [
+        {
+          "id": "ceo-act-13",
+          "header": "Activate automated hyperlocal store order routing across 284 stores",
+          "bullet1": "Routed 14,800 festive online orders to closest retail store with available stock",
+          "bullet2": "Average dispatch time from store floor to delivery van reduced to 18 minutes",
+          "assignedTo": "HyperLocal AI",
+          "isAI": true,
+          "status": "Done",
+          "progress": 100
+        },
+        {
+          "id": "ceo-act-14",
+          "header": "Integrate third-party electric van and two-wheeler express delivery fleet",
+          "bullet1": "Contracted 450 zero-emission delivery riders for express urban dispatches",
+          "bullet2": "Maintained 97.4% on-time delivery SLA across Mumbai, Delhi, and Bengaluru",
+          "assignedTo": "FleetOrchestrator AI",
+          "isAI": true,
+          "status": "In progress",
+          "progress": 70
+        },
+        {
+          "id": "ceo-act-15",
+          "header": "Launch dedicated store curbside pickup bays with digital QR check-in",
+          "bullet1": "Installed reserved express pickup parking stalls in 80 shopping mall locations",
+          "bullet2": "Customers receive boxed electronics into trunk in under 3 minutes of arrival",
+          "assignedTo": "CurbsideSync AI",
+          "isAI": true,
+          "status": "In progress",
+          "progress": 55
+        },
+        {
+          "id": "ceo-act-16",
+          "header": "CEO quarterly strategic review of omnichannel delivery margins",
+          "bullet1": "Assess customer acquisition cost and lifetime value of express delivery shoppers",
+          "bullet2": "Authorize national brand marketing campaign for 3-hour doorstep guarantee",
+          "assignedTo": "Siddharth Rao",
+          "isAI": false,
+          "status": "Waiting",
+          "progress": 20
         }
       ]
     }
@@ -1805,6 +1959,33 @@ const RAW_PERSONA_DATA: Record<PersonaType, any> = {
       "timeAgo": "6 hrs ago",
       "tag": "Good",
       "fullDetail": "Bite-sized mobile learning modules on generative smartphone features and inverter AC energy ratings achieved a 96% first-attempt quiz pass rate."
+    },
+    {
+      "id": "chro-int-6",
+      "headline": "Store employee health insurance coverage expanded to include dependents",
+      "oneLiner": "Comprehensive cashless coverage rolled out for 14,000 frontline retail associates.",
+      "source": "Internal – People & Benefits Desk",
+      "timeAgo": "7 hrs ago",
+      "tag": "Good",
+      "fullDetail": "Enhanced medical protection package covering hospitalizations, preventative health checks, and OPD subsidies boosted morale across all 284 store teams ahead of festive sales."
+    },
+    {
+      "id": "chro-int-7",
+      "headline": "Diversity in store management leadership increases to thirty-four percent",
+      "oneLiner": "Female store managers and electronics department supervisors reach record high.",
+      "source": "Internal – Leadership Diversity Index",
+      "timeAgo": "8 hrs ago",
+      "tag": "Good",
+      "fullDetail": "Accelerated retail leadership track graduated 86 assistant store managers, driving measurable improvements in customer satisfaction and store team collaboration."
+    },
+    {
+      "id": "chro-int-8",
+      "headline": "State labor board issues updated guidelines on festive overtime limits",
+      "oneLiner": "Karnataka and Maharashtra cap weekly overtime hours to ensure employee rest cycles.",
+      "source": "State Department of Labor Circular",
+      "timeAgo": "9 hrs ago",
+      "tag": "OK",
+      "fullDetail": "HR rostering algorithms adjusted shift rotations to ensure maximum 48-hour working weeks with mandatory 12-hour rest gaps between consecutive store shifts."
     }
   ],
   "risks": [
@@ -2108,6 +2289,56 @@ const RAW_PERSONA_DATA: Record<PersonaType, any> = {
           "isAI": false,
           "status": "Waiting",
           "progress": 25
+        }
+      ]
+    },
+    {
+      "id": "chro-strat-4",
+      "headline": "Frontline Employee Wellness & Festive Rest Cycle Roster Engine",
+      "title": "Frontline Employee Wellness & Festive Rest Cycle Roster Engine",
+      "twoSentenceDetail": "AI scheduling algorithm monitors staff fatigue levels, daily steps, and peak store hours. Enforces mandatory ergonomic rest breaks and healthy meal provisions during festive rushes.",
+      "tag": "Good",
+      "percentCompleted": 78,
+      "actions": [
+        {
+          "id": "chro-act-13",
+          "header": "Deploy smart ergonomic rest break scheduling across 284 stores",
+          "bullet1": "Automated 20-minute restorative breaks during quiet afternoon footfall periods",
+          "bullet2": "Prevented employee burnout and lowered end-of-shift fatigue complaints by 40%",
+          "assignedTo": "WellnessScheduler AI",
+          "isAI": true,
+          "status": "Done",
+          "progress": 100
+        },
+        {
+          "id": "chro-act-14",
+          "header": "Provide daily nutritious hot meals and hydration bars in store staff lounges",
+          "bullet1": "Contracted certified catering partners across 18 major urban clusters",
+          "bullet2": "Subsidized 100% of festive meal costs for 14,200 retail and warehouse associates",
+          "assignedTo": "StaffCareBot AI",
+          "isAI": true,
+          "status": "Done",
+          "progress": 100
+        },
+        {
+          "id": "chro-act-15",
+          "header": "Monitor anonymous store team sentiment and feedback pulse daily",
+          "bullet1": "Daily micro-pulse score averaged 8.6 out of 10 across all 4 retail zones",
+          "bullet2": "Resolved 42 local air-conditioning and break room issues within 24 hours",
+          "assignedTo": "SentimentPulse AI",
+          "isAI": true,
+          "status": "In progress",
+          "progress": 75
+        },
+        {
+          "id": "chro-act-16",
+          "header": "CHRO executive sign-off on festive wellness and team recognition rewards",
+          "bullet1": "Review employee net promoter score (eNPS) report and attendance consistency",
+          "bullet2": "Authorize ₹3.5 Crore festive appreciation gift hampers for all store families",
+          "assignedTo": "Meenakshi Sundaram",
+          "isAI": false,
+          "status": "Waiting",
+          "progress": 35
         }
       ]
     }
@@ -2457,6 +2688,33 @@ const RAW_PERSONA_DATA: Record<PersonaType, any> = {
       "timeAgo": "6 hrs ago",
       "tag": "Good",
       "fullDetail": "Comprehensive black-box testing against store Wi-Fi networks, mobile POS terminals, and customer cloud accounts verified PCI-DSS level 1 compliance with zero critical vulnerabilities."
+    },
+    {
+      "id": "cdto-int-6",
+      "headline": "In-store 5G private cellular network deployed to top fifty flagship showrooms",
+      "oneLiner": "Ultra-low latency connectivity powers interactive 8K demos and wireless POS billing.",
+      "source": "Internal – Infrastructure Engineering",
+      "timeAgo": "7 hrs ago",
+      "tag": "Good",
+      "fullDetail": "Dedicated private wireless spectrum eliminated Wi-Fi congestion in high-footfall mall showrooms, ensuring 99.999% uptime for digital signage and mobile barcode scanners."
+    },
+    {
+      "id": "cdto-int-7",
+      "headline": "Customer loyalty mobile application passes three million active downloads",
+      "oneLiner": "Personalized appliance upgrade alerts drive 28% of repeat store visits.",
+      "source": "Google Play & App Store Developer Console",
+      "timeAgo": "8 hrs ago",
+      "tag": "Good",
+      "fullDetail": "AI recommendation engine matched past purchases with festive upgrade discounts, generating ₹42 Crore in tracked store purchases through in-app redemption coupons."
+    },
+    {
+      "id": "cdto-int-8",
+      "headline": "Store IoT temperature sensor gateway reports intermittent battery drain",
+      "oneLiner": "Firmware update scheduled for 180 wireless shelf sensors across 12 stores.",
+      "source": "Internal – IoT Operations Telemetry",
+      "timeAgo": "9 hrs ago",
+      "tag": "OK",
+      "fullDetail": "Over-the-air firmware patch deployed via Bluetooth mesh network to optimize sleep cycles, restoring battery life expectancy to 36 months without manual technician intervention."
     }
   ],
   "risks": [
@@ -2760,6 +3018,56 @@ const RAW_PERSONA_DATA: Record<PersonaType, any> = {
           "isAI": false,
           "status": "Waiting",
           "progress": 40
+        }
+      ]
+    },
+    {
+      "id": "cdto-strat-4",
+      "headline": "Unified Customer Data Platform & Instant In-Store Profile Recognition",
+      "title": "Unified Customer Data Platform & Instant In-Store Profile Recognition",
+      "twoSentenceDetail": "Unifies online browsing history, past appliance purchases, and warranty records into a single real-time profile. Equips store advisors with instant product recommendations when customers walk in.",
+      "tag": "Good",
+      "percentCompleted": 70,
+      "actions": [
+        {
+          "id": "cdto-act-13",
+          "header": "Unify 6.8 million customer transaction records into real-time graph database",
+          "bullet1": "Consolidated ERP purchase logs, website clickstreams, and customer service calls",
+          "bullet2": "Achieved sub-50 millisecond profile query response for in-store tablet apps",
+          "assignedTo": "DataMesh AI",
+          "isAI": true,
+          "status": "Done",
+          "progress": 100
+        },
+        {
+          "id": "cdto-act-14",
+          "header": "Deploy clienteling assistant tablet interface to 2,400 senior sales advisors",
+          "bullet1": "Advisors instantly view customer's existing home appliances and warranty status",
+          "bullet2": "Generates tailored trade-in and exchange value estimates in under 10 seconds",
+          "assignedTo": "ClienteleSync AI",
+          "isAI": true,
+          "status": "In progress",
+          "progress": 75
+        },
+        {
+          "id": "cdto-act-15",
+          "header": "Automate personalized digital post-purchase setup guides and warranty passes",
+          "bullet1": "Dispatches WhatsApp interactive video setup manuals within 1 hour of delivery",
+          "bullet2": "Reduced customer support hotline installation inquiries by 38%",
+          "assignedTo": "CareBot AI",
+          "isAI": true,
+          "status": "In progress",
+          "progress": 65
+        },
+        {
+          "id": "cdto-act-16",
+          "header": "CDTO review of data privacy compliance and DPDP Act audit certifications",
+          "bullet1": "Verify complete compliance with Digital Personal Data Protection regulatory mandate",
+          "bullet2": "Sign off on annual data sovereignty and encryption architecture audit report",
+          "assignedTo": "Ananya Sen",
+          "isAI": false,
+          "status": "Waiting",
+          "progress": 30
         }
       ]
     }
@@ -3122,6 +3430,33 @@ const RAW_PERSONA_DATA: Record<PersonaType, any> = {
       "timeAgo": "5 hrs ago",
       "tag": "Good",
       "fullDetail": "Accelerometer sensor tags on premium television containers triggered real-time cabin warnings whenever road vibration exceeded 2.5G, keeping transit claims negligible."
+    },
+    {
+      "id": "coso-int-6",
+      "headline": "Regional distribution centers achieve ninety-nine percent inventory accuracy",
+      "oneLiner": "Automated drone barcode scanning reconciled 1.2 million appliance units.",
+      "source": "Internal – Supply Chain Audit Bureau",
+      "timeAgo": "6 hrs ago",
+      "tag": "Good",
+      "fullDetail": "Autonomous warehouse quadcopters completed nightly inventory audits in Bhiwandi and Manesar mega-hubs, reducing discrepancy rates to less than 0.08%."
+    },
+    {
+      "id": "coso-int-7",
+      "headline": "Diesel fuel prices drop three percent across major commercial logistics corridors",
+      "oneLiner": "Interstate freight carrier contracts benefit from lower diesel pump benchmarks.",
+      "source": "Indian Oil Corporation Fuel Bulletin",
+      "timeAgo": "7 hrs ago",
+      "tag": "Good",
+      "fullDetail": "Softening diesel prices combined with AI load clustering will trim an estimated ₹45 Lakh from our monthly long-haul trucking and inter-city warehouse transfer expenditure."
+    },
+    {
+      "id": "coso-int-8",
+      "headline": "Severe coastal rain in Chennai prompts precautionary warehouse flood barriers",
+      "oneLiner": "Automated flood gates activated at Sriperumbudur distribution facility.",
+      "source": "India Meteorological Department (IMD)",
+      "timeAgo": "8 hrs ago",
+      "tag": "OK",
+      "fullDetail": "Heavy rain alert triggered automated hydraulic flood barriers and auxiliary drainage pumps. All television and refrigerator inventory safely elevated on double-racked pallets with zero damage."
     }
   ],
   "risks": [
@@ -3427,6 +3762,56 @@ const RAW_PERSONA_DATA: Record<PersonaType, any> = {
           "progress": 30
         }
       ]
+    },
+    {
+      "id": "coso-strat-4",
+      "headline": "Reverse Logistics & Grade-A Refurbished Appliance Liquidation",
+      "title": "Reverse Logistics & Grade-A Refurbished Appliance Liquidation",
+      "twoSentenceDetail": "Centralizes customer appliance returns into automated diagnostic centers. Tests, certifies, and lists open-box electronics on certified outlet channels within 48 hours to recover working capital.",
+      "tag": "Good",
+      "percentCompleted": 74,
+      "actions": [
+        {
+          "id": "coso-act-13",
+          "header": "Deploy automated diagnostic test benches in 4 regional return hubs",
+          "bullet1": "Tested display panels, audio drivers, and compressor pressures in 12 minutes",
+          "bullet2": "Certified 4,200 open-box smart TVs and inverter ACs for Grade-A outlet resale",
+          "assignedTo": "DiagnosticBot AI",
+          "isAI": true,
+          "status": "Done",
+          "progress": 100
+        },
+        {
+          "id": "coso-act-14",
+          "header": "Sync certified refurbished stock to corporate outlet website and B2B buyers",
+          "bullet1": "Listed verified units at attractive 25% discounts with full 1-year warranty",
+          "bullet2": "Average inventory turnaround time dropped from 21 days to 3.8 days",
+          "assignedTo": "OutletSync AI",
+          "isAI": true,
+          "status": "In progress",
+          "progress": 80
+        },
+        {
+          "id": "coso-act-15",
+          "header": "Automate supplier warranty recovery claims for defective components",
+          "bullet1": "Filed ₹2.8 Crore in direct manufacturer credit claims for confirmed factory faults",
+          "bullet2": "Achieved 98% settlement rate with Samsung, LG, and Whirlpool vendor partners",
+          "assignedTo": "WarrantyClaim AI",
+          "isAI": true,
+          "status": "In progress",
+          "progress": 65
+        },
+        {
+          "id": "coso-act-16",
+          "header": "COSO sign-off on quarterly circular economy and recycling compliance report",
+          "bullet1": "Verify complete compliance with central e-waste recycling directives",
+          "bullet2": "Approve annual revenue recovery target of ₹24 Crore from certified outlet sales",
+          "assignedTo": "Vikramaditya Roy",
+          "isAI": false,
+          "status": "Waiting",
+          "progress": 30
+        }
+      ]
     }
   ],
   "starterQuestions": [
@@ -3668,13 +4053,19 @@ export const PERSONA_DATA: Record<PersonaType, PersonaDataBundle> = (Object.keys
       contactPerson: contacts[(idx + 2) % contacts.length],
     }));
 
+    const strategies: StrategyItem[] = rawBundle.strategies.map((strat: any) => ({
+      ...strat,
+      headline: strat.headline || strat.title || 'Strategic Initiative',
+      title: strat.title || strat.headline || 'Strategic Initiative',
+    }));
+
     acc[persona] = {
       kpiCards,
       extraDashboards: rawBundle.extraDashboards,
       intelligence,
       risks,
       opportunities,
-      strategies: rawBundle.strategies,
+      strategies,
       starterQuestions: rawBundle.starterQuestions,
     };
     return acc;
