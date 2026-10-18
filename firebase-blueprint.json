@@ -1,0 +1,110 @@
+{
+  "entities": {
+    "Strategy": {
+      "title": "Strategy",
+      "description": "An executive strategy or action plan tracked in the Action Cockpit",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the strategy",
+          "maxLength": 128
+        },
+        "headline": {
+          "type": "string",
+          "description": "Headline description of the strategy",
+          "maxLength": 300
+        },
+        "twoSentenceDetail": {
+          "type": "string",
+          "description": "Two sentence detailed summary of what the strategy executes",
+          "maxLength": 1000
+        },
+        "tag": {
+          "type": "string",
+          "description": "Sentiment rating tag",
+          "enum": ["Good", "OK", "Bad"]
+        },
+        "percentCompleted": {
+          "type": "number",
+          "description": "Percentage completion of the strategy from 0 to 100"
+        },
+        "persona": {
+          "type": "string",
+          "description": "Leadership persona associated with this strategy",
+          "maxLength": 120
+        },
+        "userId": {
+          "type": "string",
+          "description": "User identifier who created or owns this record",
+          "maxLength": 128
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp when created"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp when last modified"
+        }
+      },
+      "required": ["id", "headline", "persona", "percentCompleted"]
+    },
+    "ChatMessage": {
+      "title": "ChatMessage",
+      "description": "A conversation turn in the Talk to Data AI leadership assistant",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the chat message",
+          "maxLength": 128
+        },
+        "role": {
+          "type": "string",
+          "description": "Sender role",
+          "enum": ["user", "assistant"]
+        },
+        "text": {
+          "type": "string",
+          "description": "Text message content",
+          "maxLength": 10000
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Display timestamp string",
+          "maxLength": 64
+        },
+        "persona": {
+          "type": "string",
+          "description": "Current persona context for the conversation",
+          "maxLength": 120
+        },
+        "userId": {
+          "type": "string",
+          "description": "User identifier of the session author",
+          "maxLength": 128
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp when message was stored"
+        }
+      },
+      "required": ["id", "role", "text", "persona"]
+    }
+  },
+  "firestore": {
+    "/strategies/{strategyId}": {
+      "schema": {
+        "$ref": "Strategy"
+      },
+      "description": "Collection of executive strategies, action splits, and progress states"
+    },
+    "/chatMessages/{messageId}": {
+      "schema": {
+        "$ref": "ChatMessage"
+      },
+      "description": "Collection of conversational messages and answers in Talk to Data"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 1. Global Safety Net: Default-deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Connection test document
+    match /test/{docId} {
+      allow read: if true;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidStrategy(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.headline is string && data.headline.size() <= 300 &&
+             data.percentCompleted is number && data.percentCompleted >= 0 && data.percentCompleted <= 100 &&
+             data.persona is string && data.persona.size() <= 120;
+    }
+
+    function isValidChatMessage(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.role in ['user', 'assistant'] &&
+             data.text is string && data.text.size() <= 10000 &&
+             data.persona is string && data.persona.size() <= 120;
+    }
+
+    // Executive strategies and action progress (publicly accessible without login as requested)
+    match /strategies/{strategyId} {
+      allow get, list: if true;
+      allow create: if isValidId(strategyId) && isValidStrategy(incoming());
+      allow update: if isValidId(strategyId) && isValidStrategy(incoming());
+      allow delete: if isValidId(strategyId);
+    }
+
+    // Talk to Data AI chat conversation turns (publicly accessible without login as requested)
+    match /chatMessages/{messageId} {
+      allow get, list: if true;
+      allow create: if isValidId(messageId) && isValidChatMessage(incoming());
+      allow delete: if isValidId(messageId);
+    }
+  }
+}

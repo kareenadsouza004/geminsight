@@ -1,0 +1,7 @@
+{
+  "name": "GemInsight",
+  "description": "Futuristic AI-powered leadership cockpit for The ArKitects retail – real-time connected intelligence, risk radar, store hierarchy, and autonomous action split.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
